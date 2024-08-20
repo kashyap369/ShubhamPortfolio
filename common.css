@@ -1,0 +1,26 @@
+*{
+margin : 0px;
+padding : 0px;
+/* font-size : 62.5% ; */
+box-sizing : border-box ;
+}
+.pm-color{
+    color: #FC5811;
+}
+.sec-bg-color{
+    background-color: #EFDFD2;
+}
+.pm-bg-color{
+    background-color: #FC5811;
+}
+.sec-bg-colorLight{
+    background-color: #F4EAE1;
+}
+.myfont{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }

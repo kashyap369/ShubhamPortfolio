@@ -1,0 +1,548 @@
+*{
+margin : 0px;
+padding : 0px;
+/* font-size : 62.5% ; */
+box-sizing : border-box ;
+}
+
+        /* media queries for the mobile devices between 320px and 425 */
+@media (max-width:425px){
+    *{
+    margin : 0px;
+    padding : 0px;
+    /* font-size : 62.5% ; */
+    box-sizing : border-box ;
+    }
+
+    .nav{
+        height: 3rem;
+        width: 100vw;
+        display: block;
+        background-color: #efdfd2   ;
+        /* background-color: rgb(242, 165, 165); */
+    }
+    ul{
+        flex-direction: column;
+        position: relative;
+        left: 10%;
+        top: 5rem;
+        display: none;
+    }
+    .cancel_btn{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: white;
+        border-radius: 50%;
+        padding: 2px;
+    }
+    .menu_btn{
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .nav_link{
+        /* background-color: #fff; */
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        left: -100%;
+        height: 100vh;
+        z-index: 5;
+        transition: all ease-in 0.4s;
+    }
+    .mobi_nav{
+        /* padding-top: 3.5rem; */
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fc5811;
+    }
+    .mn_box1{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .mn_box1 span{
+        font-size: 1.2em;
+        background-color: #efdfd2;
+        padding: 5px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-left: 2%;
+    }
+    #mn_ul{
+        display: flex;
+        position: relative;
+        left: 0%;
+        top: 10%;
+        gap: 1rem;
+        color: white;
+
+    }
+    .mn_box2{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+    .mn_box3{
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mn_box3 a{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .mn_box3 a button{
+        background-color: #efdfd2;
+        width: 75%;
+        height: 70%;
+        border: none;
+        border-radius: 10px;
+    }
+    .mn_box4{
+        height: 5%;
+        width: 100%;
+    }
+    .mn_box4 .mn_hr{
+        height: 2px;
+        width: 100%;
+        background-color: white;
+    }
+    .mn_box5{
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .follow_text{
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+
+    }
+
+
+
+    /* 
+    main css is below
+    */
+    .main{
+        height: auto;
+        width: 100%;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        
+    }
+
+    .main_heading{
+        font-size: 1.2em;
+    }
+    .hero_pera{
+        
+        width: 80%;
+        height: 80%;
+        font-size: 0.8em;
+    }
+    .main_links{
+       display: flex;
+       flex-direction: row;
+    }
+    .main_links svg{
+        margin-top: 2px;
+        height: 25px;
+        width: 25px;
+
+    }
+    .one{
+        display: block;
+    }
+    .main_links li {
+        margin: 0 10px; 
+    }
+    /* 
+        hero css is below
+    */
+    .hero{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+    .hero_left{
+        height: 20vh;
+        width: 100vw;
+        /* background-color: antiquewhite; */
+    }
+    .hero_mid img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .hero_mid{
+        display: flex;
+        justify-content: center;    
+        height: 20vh;
+        width: 100vw;
+        /* background-color: rgb(184, 140, 82); */
+    }
+
+    .hero_right{
+        height: 20vh;
+        width: 100vw;
+        display: block;
+        overflow: hidden;
+        /* background-color: rgb(186, 243, 105); */
+    }
+    .hero_right ul{
+        font-size: 0.8em;
+    }
+    .my2{
+        position: relative;
+        left: 70%;
+        top: -2.7rem;
+    }
+    .my4{
+        position: relative;
+        left: 70%;
+    }
+    .my4c{
+        position: relative;
+        top: -2.5rem;
+    }
+    .my2y{
+        position: relative;
+        top: -5rem;
+    }
+
+        /* 
+        service offer css is below
+        */
+
+    .service_offer{
+        overflow: hidden;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+    .offers{
+        margin-top: 10px;
+        padding: 0px;
+        width: 70%;
+    }
+
+    /* 
+    skill and exp css is below
+    */
+    .skill_exp{
+        /* display: none; */
+        overflow: hidden;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill_heading{
+        font-size: 1.5em;
+    }
+    .exp_heading{
+        /* margin-top: 2rem; */
+        font-size: 1.5em;
+    }
+    .exp_period{
+        font-size: 0.8em;
+    }
+    .exp_period button{
+        padding: 5px;
+        font-size: 1em;
+        width: 100px;
+    }
+    .box svg{
+        height: 40px;
+        width: 40px;
+    }
+    .skill_pera{
+        display: none;
+        font-size: 0.8em;
+    }
+    .skill_grid_container{
+        padding: 0px;
+        margin: 0px;
+        height: 150px;
+        width: 220px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .skill_box{
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .box{
+        margin: 0px;
+        padding: 0px;
+        height: 70px;
+        width: 70px;
+    }
+
+
+
+
+    /* 
+        portfolio css is below
+    */
+    .portfolio_hr{
+        width: 40%;
+        position: absolute;
+        right: 10px;
+        border-radius: 100%;
+        
+    }
+    .my_portfolio{
+        height: 200px;
+        width: 280px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        background-color: transparent;
+        
+        
+    }
+    .port_cs{
+        font-size: 0.7em;
+    }
+    .portfolio_heading{
+        position: absolute;
+        left: 5px;
+    }
+    .port_boxes{
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+    }
+        /* 
+        work css is below 
+        */
+    .work_container{
+        flex-direction: column;
+        height: auto;
+    }
+    .gmail_box a{
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .my_gmail svg{
+        height: 20px;
+        width: 20px;
+    }
+
+    .gmail_box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .work_form p{
+        position: relative;
+        left: 5%;
+        top: -5%;
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 1px;
+    
+    }
+    .gmail_box{
+        width: 85%;
+        gap: 1rem;
+    }
+    .my_gmail a{
+        font-size: 0.8em;
+        letter-spacing: 0.5px;
+    }
+    .svg_container{
+        margin-top: -5px;
+        height: 30px;
+        margin-left: 10px;
+        width: 30px;
+    }
+
+    .work_form{
+        padding-bottom: 1rem;
+    }
+    .work_submit_btn{
+        height: 100px;
+        width: 100px;
+        background-color: white;
+    }
+    .work_submit{
+        padding-top:1rem ;
+    }
+
+    .work_submit_btn a svg{
+        height: 50px;
+        width: 50px;
+    }
+/* 
+        footer css is below
+
+*/
+    .footer_container{
+        font-size: 0.5em;
+    }
+
+
+
+
+
+
+
+}
+
+/* 
+        media querries for the tablet devices form 426px  to 1023 px
+*/
+
+@media (min-width:426px) and (max-width:1023px){
+    *{
+    margin : 0px;
+    padding : 0px;
+    /* font-size : 62.5% ; */
+    box-sizing : border-box ;
+    }
+
+    /* 
+        hero section css is below
+    */
+    .hero_mid img{
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        filter: drop-shadow(rgba(252, 87, 17, 0.58) 10px 10px 5px);
+        
+    }
+    .my4,.my4c,.my2,.my2y{
+        font-size: 0.8em;
+    }
+    .hero_pera{
+        height: 50%;
+        padding-left: 10px;
+        width: 100%;
+        font-size: 0.8em;
+        margin-top: 10px;
+    }
+    /* 
+        service and offers
+    */
+    .service_offer{
+        height:auto;
+    }
+
+    /* 
+        skill and experience css is below
+    */
+    .skill_exp{
+        height: auto;
+        padding: 0px;
+    }
+    .skill_heading{
+        font-size: 1.5em;
+    }
+    .skill_pera{
+        font-size: 1em;
+    }
+    .skill_grid_container{  
+        margin-top: 20%;
+        height:170px;
+        width:260px;
+    }
+    .box{
+        height: 80px;
+        width: 80px;
+    }
+    .exp_heading{
+        font-size: 1.5em;
+    }
+    .my_portfolio{
+        /* height: 290px; */
+        height: 210px;
+        /* width: 570px; */
+        width: 320px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 10px;
+        
+    }
+    .port_boxes{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        font-size: 0.8em;
+    }
+
+    /* 
+        lets get to work css is below
+    */
+    .work_container{
+        height: auto;
+    }
+    .work_form p{
+        font-size: 2em;
+    }
+    .gmail_box{
+        width: 80%;
+        justify-content: space-around;
+        left: 5%;
+        gap: 1rem;
+    }
+    .my_gmail{
+        width: 100%;
+        gap: 5px;
+        display: flex;
+        
+        justify-content: space-between;
+    }
+    .my_gmail a{
+        font-size: 0.9em;
+    }
+    .work_submit_btn{
+        height: 100px;
+        width: 100px;
+    }
+    .work_submit_btn a svg{
+        height: 40px;
+        width: 40px;
+    }
+    .work_submit{
+        /* background-color: white; */
+        /* margin-top: 1rem; */
+        padding: 5%;
+
+    }
+
+
+
+}
+

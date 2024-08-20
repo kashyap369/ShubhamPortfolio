@@ -1,0 +1,504 @@
+*{
+margin : 0px;
+padding : 0px;
+/* font-size : 62.5% ; */
+box-sizing : border-box ;
+}
+
+.nav{
+    height: 4rem;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cancel_btn{
+    display: none;
+}
+.menu_btn{
+    display: none;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+ul li a{
+    text-decoration:  none;
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+}
+#dn_ul li{
+    margin-top: 5px;
+}
+#dn_ul li button{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: -5px;
+}
+.mobi_nav{
+    display: none;
+}
+    /* main css starts from below
+*/
+.main{
+    height: auto;
+    width: 100vw;
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main_heading_container{
+    display: block;
+    flex-direction: column;
+}
+.main_heading{
+    font-size: 2em;
+}
+.hero_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_pera{
+    height: 50%;
+    width: 50%;
+}
+.main_links{
+    display: flex;
+    flex-direction: row ;
+}
+/* 
+    hero css is below
+*/
+.hero_mid img{
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    filter: drop-shadow(rgba(252, 87, 17, 0.58) 10px 10px 5px);
+    
+}
+.hero_mid{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.hero_right ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -3rem;
+    
+}
+.hero_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    height: 60vh;
+    width: 100vw;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+
+    /* 
+    service offer css is below
+    */
+
+.service_offer{
+    height: 60vh;
+    width: 100vw;
+    /* background-color: orange; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.service_box_container{
+    height: 80%;
+    width: 80%;
+}
+.service_heading{
+    margin-left: -5%;
+}
+.service_text{
+    position: relative;
+    top: 5%;
+}
+.service_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* background-color: darkgrey; */
+}
+.offer_box{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+
+    /* background-color: crimson; */
+}.offers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+}
+.off_1{
+    position: relative;
+    top: -12%;
+    left: 10%;
+}
+.offers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* /
+ skill and exp section css is below
+*************************************************************************************/
+.skill_exp{
+    height: auto;
+    width: 100vw;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.skill_box{
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    /* background-color: rgb(176, 121, 121); */
+}
+.skill_pera_container{
+    /* margin-top: 2%; */
+    height: 30%;
+    width: 90%;
+    padding: 1rem;
+}
+.skill_heading{
+    position: relative;
+    font-size: 2.1em;
+    top: 5%;
+    left: 5%;
+}
+.skill_pera{
+    position: relative;
+    left: 8%;
+}
+.skill_grid_container{
+    height: 210px;
+    width: 320px;
+    margin-left: 10%;
+    margin-top: 5%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: #F4EAE1;
+    border-radius: 10px;
+
+}
+.box svg{
+    height: 60px;
+    width: 60px;
+    opacity: 90%;
+}
+.box svg:hover{
+    opacity: 100%;
+    transition: all ease-in 0.4s;
+}
+.exp_box{
+    height: 100%;
+}
+.exp_heading{
+    position: relative;
+    font-size: 2em;
+    top: 5%;
+    left: 5%;
+}
+
+.exp_period button{
+    padding: 5px;
+    border: 2px solid #FC5811;
+    border-radius: 10px;
+    width: 140px;
+}
+
+.exp_container{
+    position: relative;
+    top: 10%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.exp_flex_container{
+    position: relative;
+    bottom: 5%;
+}
+
+/* 
+    portfolio css is below
+*/
+.portfolio_text{
+    overflow: hidden;
+}
+.portfolio_text{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.portfolio_hr{
+    height: 2px;
+    width: 60%;
+    background-color: black;
+}
+.portfolio_heading{
+    padding-left: 20px;
+}
+
+.portfolio {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 1rem;
+    /* background-color: red; */
+}
+.my_portfolio{
+    height: 290px;
+    width: 570px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    
+}
+.port_box1{
+    /* background-color: yellow; */
+    /* border-radius:10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/resource/_Net\ \(1\).png");
+    background-position:center;
+    background-size: cover;
+    
+}
+
+
+
+.port_boxes{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+.port_box2{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: ghostwhite; */
+    border-radius:10px;
+    background-image: url("/resource/Avast.png");
+    background-position:center;
+    background-size: cover;
+    
+}
+.port_box3{
+    background-color: blanchedalmond;
+    border-radius:10px;
+}
+.port_box4{
+    background-color: blanchedalmond;
+    border-radius:10px;
+}
+.port_box5{
+    background-color: blanchedalmond;
+    border-radius:10px;
+}
+.port_box6{
+    background-color: blanchedalmond;
+    border-radius:10px;
+}
+/* 
+    lets work css is below
+*/
+
+.work_container{
+    /* margin-top: 5%; */
+    height: 50vh;
+    width: 100vw;
+    background-color: #FC5811;
+    display: flex;
+    justify-content: space-around;
+
+}
+.work_form{
+    height: 100%;
+    width: 100%;
+    background-color: #FC5811;
+    display: flex;
+    justify-content: center;
+    align-items: start  ;
+    flex-direction: column;
+}
+.gmail_box{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    left: 5%;
+}
+.my_gmail{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+.work_form p{
+    position: relative;
+    left: 5%;
+    top: -5%;
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+.my_gmail a:hover{
+    transition: all ease-in 0.5s;
+    color: black;
+}
+.gmail_box a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.svg_container{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.work_submit{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: orchid; */
+}
+
+.work_submit_btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.work_sub_text{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: auto;
+    color: white;
+}
+.work_sub_text p{
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.work_sub_text svg{
+    margin-top: -10px;
+    fill: white;
+}
+
+.work_submit_btn svg{
+    height: 100px;
+    /* margin-top: -10px; */
+    width: 100px;
+    fill: white;
+    transform: rotate(-30deg);
+}
+
+/* 
+    footer css is below
+*/
+footer{
+    height: auto;
+    width: 100vw;
+    margin: 0px;
+    background-color: #FC5811;
+}
+
+.footer_hr{
+    height: 2px;
+    width: 100vw;
+    background-color: white;
+}
+.footer_container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+.deve_info{
+    color: white;
+}
+.deve_id{
+    color: white;
+}
+
+
